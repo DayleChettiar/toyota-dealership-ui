@@ -27,3 +27,7 @@ Create angular repo with routing using angular CLI:
 Start up the app: 
     $ npm start     or
     $ ng serve
+
+Creating a services in project: 
+    -> go to root of project (C://pluralsight/Spring Angular/toyota-dealership-ui/toyota-dealership-ui)
+    $ ng g service services/toyota-dealership
