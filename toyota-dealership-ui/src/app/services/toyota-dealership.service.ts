@@ -14,11 +14,17 @@ export class ToyotaDealershipService {
   constructor(private http:HttpClient) { }
 
   getCars() {
-    return this.http.get('/server/api/v1/cars');
+    let token = localStorage.getItem('access_token');
+    return this.http.get('/server/api/v1/cars',
+        {headers: new HttpHeaders().set('Authorization', 'Bearer ' + token)}
+    );
   }
 
   getCar(id: number) {
-    return this.http.get('/server/api/v1/cars/' + id);
+    let token = localStorage.getItem('access_token'); 
+    return this.http.get('/server/api/v1/cars/' + id,
+        {headers: new HttpHeaders().set('Authorization', 'Bearer ' + token)}
+    );
   }
 
   createCarRegistration(car) {
