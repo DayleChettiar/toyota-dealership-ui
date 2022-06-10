@@ -1,0 +1,32 @@
+<div class="container">
+    <table class="table table-bordered table-inverse">
+      <tr>
+        <th>Car Name</th>
+        <th>Car Owner Email</th>
+        <th>Model</th>
+        <th>Year</th>
+        <th>Trim</th>
+        <th class="text-right">Purchase Price</th>
+      </tr>
+      <tr *ngFor="let car of cars">
+        <td>
+          {{car.name}}
+        </td>
+        <td>
+          {{car.email}}
+        </td>
+        <td>
+          {{car.model}}
+        </td>
+        <td>
+          {{car.year}}
+        </td>
+        <td>
+          {{car.trim}}
+        </td>
+        <td class="text-right">
+          {{car.purchasePrice}}
+        </td>
+      </tr>
+    </table>
+  </div>

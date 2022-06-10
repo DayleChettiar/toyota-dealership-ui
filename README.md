@@ -28,6 +28,11 @@ Start up the app:
     $ npm start     or
     $ ng serve
 
-Creating a services in project: 
+Creating a service in project: 
     -> go to root of project (C://pluralsight/Spring Angular/toyota-dealership-ui/toyota-dealership-ui)
     $ ng g service services/toyota-dealership
+
+
+Creating a component in project: 
+    -> go to root of project (C://pluralsight/Spring Angular/toyota-dealership-ui/toyota-dealership-ui)
+    $ ng g component components/admin    
