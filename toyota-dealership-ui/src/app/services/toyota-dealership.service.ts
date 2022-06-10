@@ -16,4 +16,13 @@ export class ToyotaDealershipService {
   getCars() {
     return this.http.get('/server/api/v1/cars');
   }
+
+  getCar(id: number) {
+    return this.http.get('/server/api/v1/cars/' + id);
+  }
+
+  createCarRegistration(car) {
+    let body = JSON.stringify(car);
+    return this.http.post('/server/api/v1/cars/', body, httpOptions);
+  }
 }
